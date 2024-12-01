@@ -1,0 +1,2 @@
+@app.post('/annotations/')
+def create_annotation(annotation: VideoAnnotation): ... # implementation for submitting new video annotation

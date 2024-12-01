@@ -1,0 +1,1 @@
+@app.post('/annotations') def submit_annotation(): pass

@@ -1,0 +1,1 @@
+Design the application architecture using microservices for independent scalability and maintainability. The architecture should include individual services for functionalities like gameplay recording, analysis, video annotation, recommendations for gear, and pro player suggestions.

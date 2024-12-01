@@ -1,0 +1,2 @@
+@app.post('/gear_recommendations/')
+def create_gear_recommendation(recommendation: GearRecommendation): ... # implementation for storing gear recommendations

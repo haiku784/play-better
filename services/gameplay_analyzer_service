@@ -1,0 +1,1 @@
+Provide API endpoints for the gameplay analyzer to send insights and statistics to the frontend.

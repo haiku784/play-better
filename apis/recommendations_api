@@ -1,0 +1,1 @@
+@app.get('/recommendations') def get_recommendations(): pass

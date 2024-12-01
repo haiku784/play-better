@@ -1,0 +1,1 @@
+CREATE TABLE gear_recommendations (id SERIAL PRIMARY KEY, session_id INT REFERENCES gameplay_sessions(id), recommendation_data JSONB, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);

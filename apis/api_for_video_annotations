@@ -1,0 +1,1 @@
+Provide API endpoints for video annotation tools to submit and retrieve marked moments and comments.

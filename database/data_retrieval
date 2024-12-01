@@ -1,0 +1,1 @@
+SELECT * FROM gameplay_insights WHERE session_id = 'session_123';

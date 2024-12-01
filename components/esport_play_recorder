@@ -1,0 +1,1 @@
+Implement an e-sport play recorder that captures gameplay sessions.

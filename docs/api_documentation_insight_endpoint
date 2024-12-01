@@ -1,0 +1,6 @@
+# API Endpoints Documentation
+
+## Send Gameplay Insights
+**POST** `/api/insights/`
+
+### Request Body

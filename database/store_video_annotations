@@ -1,0 +1,1 @@
+CREATE TABLE video_annotations (id SERIAL PRIMARY KEY, session_id INT REFERENCES gameplay_sessions(id), annotation_data JSONB, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);

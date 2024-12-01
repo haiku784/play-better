@@ -1,0 +1,1 @@
+Provide API endpoints for the e-sport play recorder to store and retrieve gameplay sessions.

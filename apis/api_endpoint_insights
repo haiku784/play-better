@@ -1,0 +1,2 @@
+@app.post('/insights/')
+def post_insights(analysis: InsightsData): ... # implementation for storing generated game insights

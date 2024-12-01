@@ -1,0 +1,1 @@
+Provide API endpoints for gear and configuration recommendations based on gameplay analysis.

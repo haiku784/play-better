@@ -1,0 +1,8 @@
+class Statistics(BaseModel):
+    session_id: str
+    statistics: dict
+
+@app.post('/api/statistics/')
+def send_statistics(statistics: Statistics):
+    # Logic to save statistics in the database
+    return {'status': 'success', 'message': 'Statistics received'}

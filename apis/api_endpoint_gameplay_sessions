@@ -1,0 +1,2 @@
+@app.post('/gameplay_sessions/')
+def create_gameplay_session(session: GameplaySession): ... # implementation for storing a new gameplay session

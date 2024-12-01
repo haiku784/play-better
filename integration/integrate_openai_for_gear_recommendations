@@ -1,0 +1,1 @@
+Integrate OpenAI for recommendations related to gear.

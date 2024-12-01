@@ -1,0 +1,5 @@
+# Microservices design organized around gameplay features \
+- GameRecorderService \
+- AnalyzerService \
+- AnnotationService \
+- RecommendationService

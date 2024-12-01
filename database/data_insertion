@@ -1,0 +1,1 @@
+INSERT INTO gameplay_insights (session_id, insight_type, insight_value) VALUES ('session_123', 'average_score', 75.5);

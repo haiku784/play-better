@@ -1,0 +1,17 @@
+// MongoDB schema for gameplay sessions
+const mongoose = require('mongoose');
+const gameplaySessionSchema = new mongoose.Schema({
+    id: { type: String, required: true },
+    duration: { type: Number, required: true },
+    score: { type: Number, required: true },
+    playerStats: { type: Object, required: true },
+    createdAt: { type: Date, default: Date.now }
+});
+
+const GameplaySession = mongoose.model('GameplaySession', gameplaySessionSchema);
+
+// Example of saving a session
+const saveGameplaySession = async (sessionData) => {
+    const session = new GameplaySession(sessionData);
+    await session.save();
+};

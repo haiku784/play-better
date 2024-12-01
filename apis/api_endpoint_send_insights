@@ -1,0 +1,13 @@
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Insights(BaseModel):
+    session_id: str
+    insights: dict
+
+@app.post('/api/insights/')
+def send_insights(insights: Insights):
+    # Logic to save insights in the database
+    return {'status': 'success', 'message': 'Insights received'}
