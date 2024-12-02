@@ -1,0 +1,1 @@
+Defines the Mongoose model for insights and statistics with necessary fields such as game_id, player_id, score, performance metrics, and timestamps.

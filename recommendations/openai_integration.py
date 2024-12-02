@@ -1,0 +1,1 @@
+# Code to integrate OpenAI for gear recommendations

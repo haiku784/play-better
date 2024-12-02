@@ -1,0 +1,1 @@
+function VideoAnnotationTool(): JSX.Element { return (<div>This is a video annotation tool.</div>); }

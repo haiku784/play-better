@@ -1,0 +1,1 @@
+const proPlayers = [ { name: 'Player1', game: 'Game A', tips: 'Focus on positioning.' }, { name: 'Player2', game: 'Game B', tips: 'Practice your aim daily.' }, { name: 'Player3', game: 'Game C', tips: 'Communicate with your team.' } ]; export default proPlayers;

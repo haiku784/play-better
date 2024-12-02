@@ -1,0 +1,1 @@
+class ConfigurationRecommendation { /* Implementation details here */ }

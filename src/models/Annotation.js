@@ -1,0 +1,1 @@
+const mongoose = require('mongoose'); const annotationSchema = new mongoose.Schema({ moment: String, comment: String }); module.exports = mongoose.model('Annotation', annotationSchema);

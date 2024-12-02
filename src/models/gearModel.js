@@ -1,0 +1,1 @@
+const storeGearRecommendations = (recommendations: object) => { /* Code to store gear recommendations in MongoDB */ };

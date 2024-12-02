@@ -1,0 +1,1 @@
+React component that fetches insights and statistics from the backend and displays them to users in a user-friendly format, including graphs and key metrics.

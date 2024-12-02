@@ -1,0 +1,1 @@
+# Domain-driven design documentation and core classes

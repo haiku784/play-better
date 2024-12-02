@@ -1,0 +1,1 @@
+class GearRecommendation { /* Implementation details here */ }

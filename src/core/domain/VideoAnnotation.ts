@@ -1,0 +1,1 @@
+class VideoAnnotation { /* Implementation details here */ }

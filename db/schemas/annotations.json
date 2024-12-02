@@ -1,0 +1,7 @@
+{ 
+  type: 'object',
+  properties: {
+    momentId: { type: 'string' },
+    comments: { type: 'array' },
+  }
+}

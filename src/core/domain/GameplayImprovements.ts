@@ -1,0 +1,1 @@
+class GameplayImprovements { /* Implementation details here */ }

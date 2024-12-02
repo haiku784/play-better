@@ -1,0 +1,1 @@
+from fastapi import FastAPI app = FastAPI() @app.get('/pro-players') def get_pro_players(): return [ { 'name': 'Player1', 'game': 'Game A', 'tips': 'Focus on positioning.' }, { 'name': 'Player2', 'game': 'Game B', 'tips': 'Practice your aim daily.' }, { 'name': 'Player3', 'game': 'Game C', 'tips': 'Communicate with your team.' } ]

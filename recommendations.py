@@ -1,0 +1,1 @@
+# FastAPI code for gear and configuration recommendations

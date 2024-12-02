@@ -1,0 +1,7 @@
+{ 
+  type: 'object',
+  properties: {
+    gameId: { type: 'string' },
+    insights: { type: 'string' },
+  }
+}

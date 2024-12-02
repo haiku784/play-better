@@ -1,0 +1,7 @@
+{ 
+  type: 'object',
+  properties: {
+    matchId: { type: 'string' },
+    playerStats: { type: 'array' },
+  }
+}

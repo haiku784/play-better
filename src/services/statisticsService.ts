@@ -1,0 +1,1 @@
+TypeScript code for retrieving insights and statistics from the MongoDB database. Formats the data for frontend consumption and handles errors gracefully.

@@ -1,0 +1,1 @@
+import openai from 'openai'; async function getGearRecommendations(userData) { const response = await openai.Completion.create({ engine: 'davinci', prompt: generatePrompt(userData), maxTokens: 150 }); return response.choices[0].text; }

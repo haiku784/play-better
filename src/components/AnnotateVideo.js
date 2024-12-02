@@ -1,0 +1,1 @@
+function AnnotateVideo() { /* Implementation for video annotation */ }

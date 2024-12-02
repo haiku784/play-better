@@ -1,0 +1,1 @@
+from fastapi import FastAPI, HTTPException app = FastAPI() @app.post('/annotations/') async def create_annotation(annotation: Annotation): return annotation

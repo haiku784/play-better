@@ -1,0 +1,1 @@
+function VideoAnnotationTool() { return (<div>This is a video annotation tool.</div>); }
