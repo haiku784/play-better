@@ -1,0 +1,1 @@
+Implement a domain-driven design to ensure that gameplay-related features are organized around the core domain logic.

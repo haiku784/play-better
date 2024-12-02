@@ -1,0 +1,1 @@
+Store recorded gameplay sessions and related metadata for future analysis.

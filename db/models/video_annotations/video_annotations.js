@@ -1,0 +1,1 @@
+Store video annotations and user comments linked to specific gameplay moments.
