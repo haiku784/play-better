@@ -1,0 +1,1 @@
+Compile a list of pro players to follow for tips.

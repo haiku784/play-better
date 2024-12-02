@@ -1,0 +1,1 @@
+Design the application architecture using microservices for independent scalability and maintainability.

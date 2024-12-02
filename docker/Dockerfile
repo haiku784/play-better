@@ -1,0 +1,1 @@
+Containerize the application components for efficient deployment and scalability.

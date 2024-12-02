@@ -1,0 +1,1 @@
+Offer configuration recommendations tailored to different e-sport titles.
