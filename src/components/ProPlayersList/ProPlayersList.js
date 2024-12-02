@@ -1,0 +1,1 @@
+const ProPlayersList = () => { const players = [{ name: 'Player1', game: 'Game1' }, { name: 'Player2', game: 'Game2' }, /* more players */ ]; return ( <div>{players.map(player => <div key={player.name}>{player.name} - {player.game}</div>)}</div> ); }; export default ProPlayersList;

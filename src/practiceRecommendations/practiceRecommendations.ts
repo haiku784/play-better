@@ -1,0 +1,1 @@
+function suggestPracticeRecommendations(playerStats, gameStrategy) { return `Focus on ${playerStats.focusArea} with strategies in ${gameStrategy}.` }

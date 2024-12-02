@@ -1,0 +1,1 @@
+{ 'session_id': ObjectId, 'user_id': 'string', 'game_title': 'string', 'timestamp': 'date', 'metadata': { 'duration': 'number', 'score': 'number', 'comments': 'array' } }

@@ -1,0 +1,1 @@
+@app.get('/insights/') async def get_insights(): insights = fetch_insights() return insights

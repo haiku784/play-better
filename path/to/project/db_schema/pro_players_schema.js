@@ -1,0 +1,1 @@
+{ 'player_id': ObjectId, 'name': 'string', 'game_title': 'string', 'tips': 'array' }

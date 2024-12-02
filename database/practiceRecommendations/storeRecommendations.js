@@ -1,0 +1,1 @@
+db.practiceRecommendations.insert({ player: 'JohnDoe', recommendations: ['Work on flick shots', 'Improve reaction time'] })
