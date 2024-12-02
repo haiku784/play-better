@@ -1,0 +1,1 @@
+@app.get('/recommendations/gear/') async def get_gear_recommendations(): return {'recommendations': 'List of gear to enhance performance'}

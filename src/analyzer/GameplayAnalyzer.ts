@@ -1,0 +1,1 @@
+class GameplayAnalyzer { constructor(games) { this.games = games; } analyze() { // Analyze stored gameplay sessions return statistics; } }

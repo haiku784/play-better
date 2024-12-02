@@ -1,0 +1,1 @@
+db.games.insertOne({ gameId: 1, player: 'player1', score: 100 }); // Store gameplay metadata

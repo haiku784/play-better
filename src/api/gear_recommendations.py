@@ -1,0 +1,1 @@
+from fastapi import FastAPI, HTTPException app = FastAPI() @app.post('/gear-recommendations') async def get_gear_recommendations(user_stats: dict): recommendations = analyze_user_stats(user_stats) return recommendations

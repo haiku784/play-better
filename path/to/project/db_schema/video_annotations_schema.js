@@ -1,0 +1,1 @@
+{ 'annotation_id': ObjectId, 'session_id': 'string', 'user_id': 'string', 'timestamp': 'date', 'comments': 'array', 'marked_moments': { 'time': 'number', 'note': 'string' } }

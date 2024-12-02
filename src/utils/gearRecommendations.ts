@@ -1,0 +1,1 @@
+function getGearRecommendations(userStats) { return fetch('/api/gear-recommendations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(userStats) }) .then(response => response.json()); }

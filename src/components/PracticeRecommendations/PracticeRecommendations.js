@@ -1,0 +1,1 @@
+const PracticeRecommendations = ({ playerStats, gameStrategy }) => { return <div>{`Focus on ${playerStats.focusArea} with strategies in ${gameStrategy}.`}</div>; }

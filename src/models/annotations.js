@@ -1,0 +1,1 @@
+{ name: String, timestamp: Date, comment: String, userId: String, gameplayId: String }

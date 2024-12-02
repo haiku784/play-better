@@ -1,0 +1,1 @@
+const VideoAnnotation = () => { // Functionality for users to annotate videos return (<div>Annotation Tool</div>); }

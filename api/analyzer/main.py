@@ -1,0 +1,1 @@
+from fastapi import FastAPI app = FastAPI() @app.get('/analyze/') async def analyze(): # Trigger the analysis return {'status': 'Analysis completed'}
