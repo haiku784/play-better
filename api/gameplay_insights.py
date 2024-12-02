@@ -1,0 +1,1 @@
+from fastapi import FastAPI, HTTPException from pydantic import BaseModel app = FastAPI() class GameSession(BaseModel): id: int duration: int score: int victories: int @app.post('/analyze/') async def analyze(session: GameSession): # Instantiate analyzer insights = GameplayAnalyzer([session]).processSessions() return insights

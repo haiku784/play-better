@@ -1,0 +1,1 @@
+import React, { useState } from 'react'; const VideoAnnotation = ({ videoId }) => { const [annotation, setAnnotation] = useState(''); const handleSave = () => { annotateImprovement(videoId, annotation); }; return ( <div> <textarea onChange={e => setAnnotation(e.target.value)} /> <button onClick={handleSave}>Save Improvement</button> </div> ); }; export default VideoAnnotation;

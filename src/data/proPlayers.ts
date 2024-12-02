@@ -1,0 +1,1 @@
+const proPlayers = [ { name: 'Faker', game: 'League of Legends', tips: 'Focus on map awareness and positioning.' }, { name: 'Ninja', game: 'Fortnite', tips: 'Practice building techniques consistently.' }, { name: 'S1mple', game: 'CS:GO', tips: 'Aim training is crucial; use aim maps.' } ]; export default proPlayers;

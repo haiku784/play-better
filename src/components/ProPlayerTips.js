@@ -1,0 +1,1 @@
+import React from 'react'; import proPlayers from './data/proPlayers'; function ProPlayerTips() { return ( <div> <h1>Pro Players to Follow for Tips</h1> <ul> {proPlayers.map(player => ( <li key={player.name}> <strong>{player.name}</strong>: {player.tips} (Game: {player.game}) </li> ))} </ul> </div> ); } export default ProPlayerTips;

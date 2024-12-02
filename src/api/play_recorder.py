@@ -1,0 +1,1 @@
+from fastapi import FastAPI, HTTPException app = FastAPI() @app.post('/record') async def record_gameplay(session: Session): if validate_session(session): store_session(session) return {'status': 'success'} raise HTTPException(status_code=400, detail='Invalid session')}
