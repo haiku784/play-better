@@ -1,0 +1,1 @@
+import React from 'react'; const GameplayInsights = ({ data }) => { return ( <div> {data.map((item, index) => <div key={index}>{item}</div>)} </div> ); }; export default GameplayInsights;

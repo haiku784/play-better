@@ -1,0 +1,1 @@
+const mongoose = require('mongoose'); const gameplaySchema = new mongoose.Schema({ sessionId: String, duration: Number, score: Number, timestamp: Date, }); module.exports = mongoose.model('Gameplay', gameplaySchema);

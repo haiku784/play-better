@@ -1,0 +1,1 @@
+@app.get('/insights/{videoId}') async def get_insights(videoId: str): insights = fetch_insights(videoId) if insights: return insights raise HTTPException(status_code=404, detail='Insights not found')

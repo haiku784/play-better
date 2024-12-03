@@ -1,0 +1,1 @@
+class GameplayAnalyzer { constructor(games) { this.games = games; } processSessions() { return this.games.map(game => ({ gameId: game.id, stats: this.calculateStats(game) })); } calculateStats(game) { // Calculate player performance statistics return { score: game.score, duration: game.duration, victories: game.victories }; }}
