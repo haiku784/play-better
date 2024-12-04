@@ -1,0 +1,9 @@
+src/
+|-- components/
+|   |-- App.tsx
+|   |-- Header.tsx
+|   |-- Footer.tsx
+|-- App.tsx
+|-- index.tsx
+|-- index.css
+|-- react-app-env.d.ts
