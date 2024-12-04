@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web:
+    build: ./server
+    ports:
+      - "80:80"
+  api:
+    build: ./api
+    ports:
+      - "8000:80"
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017
