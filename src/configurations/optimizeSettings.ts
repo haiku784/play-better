@@ -1,0 +1,1 @@
+const getRecommendations = (userPreferences) => { /* Implementation logic */ }; export default getRecommendations;

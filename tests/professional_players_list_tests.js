@@ -1,0 +1,1 @@
+describe('Professional Players List', () => { it('should generate a list of professional players', async () => { const players = await getProfessionalPlayers(); expect(players.length).toBeGreaterThan(0); }); });

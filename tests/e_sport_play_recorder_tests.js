@@ -1,0 +1,1 @@
+describe('E-Sport Play Recorder', () => { it('should capture gameplay correctly', async () => { const result = await captureGameplay(); expect(result).toBeTruthy(); }); it('should save gameplay data to the database', async () => { const data = await getGameplayData(); expect(data).not.toBeNull(); }); });

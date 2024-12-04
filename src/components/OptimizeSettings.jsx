@@ -1,0 +1,1 @@
+import React from 'react'; const OptimizeSettings = ({ preferences }) => { /* Component logic */ }; export default OptimizeSettings;

@@ -1,0 +1,1 @@
+from fastapi import FastAPI; app = FastAPI(); @app.post('/user/preferences') async def store_preferences(preferences: dict): pass

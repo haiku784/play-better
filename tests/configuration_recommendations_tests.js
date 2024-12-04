@@ -1,0 +1,1 @@
+describe('Configuration Recommendations', () => { it('should optimize in-game settings', async () => { const config = await getOptimizedConfig(); expect(config).toMatchObject({}); }); });

@@ -1,0 +1,1 @@
+npx create-react-app esports-play-recorder --template typescript

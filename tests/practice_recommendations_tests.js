@@ -1,0 +1,1 @@
+describe('Practice Recommendations', () => { it('should suggest practice based on skill level', async () => { const suggestions = await getPracticeSuggestions(); expect(suggestions).not.toBeNull(); }); });

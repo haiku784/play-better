@@ -1,0 +1,1 @@
+use PHPUnit"Framework\TestCase; class MicroservicesArchitectureTest extends TestCase { public function testServiceScaling() { $this->assertTrue(serviceScalesCorrectly()); } }

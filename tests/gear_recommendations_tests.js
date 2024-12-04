@@ -1,0 +1,1 @@
+describe('Gear Recommendations', () => { it('should provide gear recommendations based on player preferences', async () => { const recommendations = await getGearRecommendations(); expect(recommendations).toBeDefined(); }); });

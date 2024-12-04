@@ -1,0 +1,1 @@
+describe('Video Annotation Feature', () => { it('should allow users to annotate video', async () => { const result = await annotateVideo(); expect(result).toBeTruthy(); }); it('should save annotations in the database', async () => { const annotations = await getVideoAnnotations(); expect(annotations).not.toBeNull(); }); });
