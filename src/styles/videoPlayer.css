@@ -1,0 +1,20 @@
+/* Basic styles for the video player */
+.video-player {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-player video {
+    width: 100%;
+    height: auto;
+}
+
+.annotation-tool {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
