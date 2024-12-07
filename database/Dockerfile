@@ -1,0 +1,4 @@
+# Dockerfile for MongoDB service
+FROM mongo:5.0
+EXPOSE 27017
+CMD ["mongod"]

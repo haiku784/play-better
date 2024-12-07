@@ -1,0 +1,17 @@
+/* performanceMetrics.css */
+/* Styles for Performance Metrics display */
+.performance-metrics {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+.performance-metrics h2 {
+    color: #333;
+}
+.performance-metrics p {
+    font-size: 16px;
+    color: #555;
+}

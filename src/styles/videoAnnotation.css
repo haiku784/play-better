@@ -1,0 +1,19 @@
+.video-annotation {
+    max-width: 800px;
+    margin: auto;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .video-annotation {
+        width: 100%;
+    }
+    input {
+        width: 95%;
+    }
+}
