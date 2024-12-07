@@ -1,0 +1,14 @@
+{ 
+  games: [ 
+    { 
+      userId: ObjectId('...'), 
+      gameName: String, 
+      recordings: [ 
+        { 
+          recordingData: Binary, 
+          timestamp: Date 
+        } 
+      ] 
+    } 
+  ] 
+}
