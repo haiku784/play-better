@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gameplay-analyzer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gameplay-analyzer
+  template:
+    metadata:
+      labels:
+        app: gameplay-analyzer
+    spec:
+      containers:
+      - name: gameplay-analyzer
+        image: gameplay-analyzer:latest
+        ports:
+        - containerPort: 5000
