@@ -1,0 +1,21 @@
+.feedback-mechanism {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feedback-mechanism .message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feedback-mechanism .message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedback-mechanism .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
