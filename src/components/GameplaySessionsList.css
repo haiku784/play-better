@@ -1,0 +1,6 @@
+.gameplay-sessions-list { font-family: Arial, sans-serif; }
+.gameplay-sessions-list h1 { font-size: 24px; margin-bottom: 15px; }
+.gameplay-sessions-list ul { list-style-type: none; padding: 0; }
+.gameplay-sessions-list li { margin: 10px 0; }
+.error-message { color: red; }
+button { margin-top: 15px; padding: 10px 15px; font-size: 16px; }
