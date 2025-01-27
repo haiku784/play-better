@@ -1,0 +1,43 @@
+.performance-metrics {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.metrics-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.metrics-overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.metric-icon {
+    margin-right: 8px;
+}
+
+.goals-icon {
+    background-image: url('../icons/goals.svg');
+}
+
+.assists-icon {
+    background-image: url('../icons/assists.svg');
+}
+
+.accuracy-icon {
+    background-image: url('../icons/accuracy.svg');
+}
+
+.rating-icon {
+    background-image: url('../icons/rating.svg');
+}
