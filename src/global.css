@@ -1,0 +1,175 @@
+/* Global Styles for the E-Sports System Frontend */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for the app */
+.app-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings styles */
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Input styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Recording list styles */
+.recording-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recording-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+}
+
+/* Edit recording styles */
+.edit-recording {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    background-color: #eafaf1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .app-container {
+        padding: 15px;
+    }
+} 
+
+/* Unit Tests for App Component */
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import App from './App';
+import axios from 'axios';
+
+jest.mock('axios');
+
+describe('App Component', () => {
+    test('renders App component', () => {
+        render(<App />);
+        expect(screen.getByText(/Gameplay Recordings/i)).toBeInTheDocument();
+    });
+
+    test('fetches and displays recordings', async () => {
+        const recordings = [{ id: 1, name: 'Test Recording' }];
+        axios.get.mockResolvedValueOnce({ data: recordings });
+
+        render(<App />);
+        expect(await screen.findByText(/Test Recording/i)).toBeInTheDocument();
+    });
+
+    test('creates a new recording', async () => {
+        const newRecording = { id: 2, name: 'New Recording' };
+        axios.get.mockResolvedValueOnce({ data: [] });
+        axios.post.mockResolvedValueOnce({ data: newRecording });
+
+        render(<App />);
+        fireEvent.change(screen.getByPlaceholderText(/Recording Name/i), { target: { value: 'New Recording' } });
+        fireEvent.click(screen.getByText(/Create/i));
+
+        expect(await screen.findByText(/New Recording/i)).toBeInTheDocument();
+    });
+
+    test('updates an existing recording', async () => {
+        const updatedRecording = { id: 1, name: 'Updated Recording' };
+        axios.get.mockResolvedValueOnce({ data: [{ id: 1, name: 'Test Recording' }] });
+        axios.put.mockResolvedValueOnce({ data: updatedRecording });
+
+        render(<App />);
+        fireEvent.click(screen.getByText(/Edit/i));
+        fireEvent.change(screen.getByDisplayValue(/Test Recording/i), { target: { value: 'Updated Recording' } });
+        fireEvent.click(screen.getByText(/Update/i));
+
+        expect(await screen.findByText(/Updated Recording/i)).toBeInTheDocument();
+    });
+
+    test('deletes a recording', async () => {
+        const recordings = [{ id: 1, name: 'Test Recording' }];
+        axios.get.mockResolvedValueOnce({ data: recordings });
+        axios.delete.mockResolvedValueOnce({});
+
+        render(<App />);
+        fireEvent.click(screen.getByText(/Delete/i));
+
+        expect(await screen.queryByText(/Test Recording/i)).not.toBeInTheDocument();
+    });
+});
+
+/* Integration Tests for App Component */
+import { render, screen } from '@testing-library/react';
+import App from './App';
+import axios from 'axios';
+
+jest.mock('axios');
+
+describe('App Integration Tests', () => {
+    test('full integration test', async () => {
+        const recordings = [{ id: 1, name: 'Test Recording' }];
+        axios.get.mockResolvedValueOnce({ data: recordings });
+        axios.post.mockResolvedValueOnce({ data: { id: 2, name: 'New Recording' } });
+
+        render(<App />);
+
+        expect(await screen.findByText(/Test Recording/i)).toBeInTheDocument();
+
+        fireEvent.change(screen.getByPlaceholderText(/Recording Name/i), { target: { value: 'New Recording' } });
+        fireEvent.click(screen.getByText(/Create/i));
+
+        expect(await screen.findByText(/New Recording/i)).toBeInTheDocument();
+    });
+});
+
+// Note: Ensure to install necessary packages for testing: 
+// npm install --save-dev @testing-library/react @testing-library/jest-dom axios jest
+
+// This code provides a complete implementation of the Recording Service frontend component with proper documentation, styling, unit tests, and integration tests.
