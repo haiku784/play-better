@@ -1,0 +1,132 @@
+/* Global Styles for the E-Sports System */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+} 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    button {
+        width: 100%;
+    }
+} 
+
+/* Unit Tests for UserManagement Component */
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import UserManagement from './UserManagement';
+import axios from 'axios';
+
+jest.mock('axios');
+
+describe('UserManagement Component', () => {
+    beforeEach(() => {
+        axios.get.mockResolvedValue({ data: [{ id: 1, name: 'John Doe', email: 'john@example.com' }] });
+    });
+
+    test('renders UserManagement component', async () => {
+        render(<UserManagement />);
+        const titleElement = screen.getByText(/User Management/i);
+        expect(titleElement).toBeInTheDocument();
+    });
+
+    test('fetches and displays users', async () => {
+        render(<UserManagement />);
+        const userElement = await screen.findByText(/John Doe - john@example.com/i);
+        expect(userElement).toBeInTheDocument();
+    });
+
+    test('creates a new user', async () => {
+        render(<UserManagement />);
+        const nameInput = screen.getByPlaceholderText(/Name/i);
+        const emailInput = screen.getByPlaceholderText(/Email/i);
+        const createButton = screen.getByText(/Create User/i);
+
+        fireEvent.change(nameInput, { target: { value: 'Jane Doe' } });
+        fireEvent.change(emailInput, { target: { value: 'jane@example.com' } });
+        fireEvent.click(createButton);
+
+        expect(axios.post).toHaveBeenCalledWith('/api/users/', { name: 'Jane Doe', email: 'jane@example.com' });
+    });
+});
+
+/* Integration Tests for UserManagement Component */
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import UserManagement from './UserManagement';
+import axios from 'axios';
+
+jest.mock('axios');
+
+describe('UserManagement Integration Tests', () => {
+    test('fetches users on mount', async () => {
+        axios.get.mockResolvedValueOnce({ data: [{ id: 1, name: 'John Doe', email: 'john@example.com' }] });
+        render(<UserManagement />);
+        const userElement = await screen.findByText(/John Doe - john@example.com/i);
+        expect(userElement).toBeInTheDocument();
+    });
+});
+
+// Note: Ensure to run tests using a testing framework like Jest.
