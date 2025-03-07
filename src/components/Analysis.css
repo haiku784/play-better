@@ -1,0 +1,31 @@
+/*
+ * Analysis CSS
+ * This file contains styles for the Analysis component.
+ */
+.analysis-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-table th, .metrics-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.metrics-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
