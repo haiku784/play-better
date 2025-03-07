@@ -1,0 +1,26 @@
+/* NotificationService.css - Styles for NotificationService component */
+.notification-service {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.notification-item button:hover {
+  background-color: #ff1a1a;
+}
