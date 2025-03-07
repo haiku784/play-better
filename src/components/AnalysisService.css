@@ -1,0 +1,24 @@
+/* src/components/AnalysisService.css */
+.analysis-service {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-service h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.metric-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

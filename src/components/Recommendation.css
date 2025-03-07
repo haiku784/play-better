@@ -1,0 +1,30 @@
+/* src/components/Recommendation.css */
+.recommendation-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recommendation-item {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.loading {
+  font-size: 18px;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
