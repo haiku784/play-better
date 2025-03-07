@@ -1,0 +1,35 @@
+/* src/components/RecordingService.css */
+.recording-service {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.recordings-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recordings-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

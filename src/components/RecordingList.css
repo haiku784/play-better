@@ -1,0 +1,21 @@
+/* src/components/RecordingList.css */
+.recording-list {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recording-list h2 {
+  color: #333;
+}
+
+.recording-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recording-list li {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,21 @@
+/* src/components/PerformanceMetrics.css */
+.performance-metrics {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.performance-metrics h2 {
+  color: #333;
+}
+
+.performance-metrics ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.performance-metrics li {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
