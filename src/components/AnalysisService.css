@@ -1,0 +1,28 @@
+/* src/components/AnalysisService.css */
+.analysis-service {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.metrics-table th, .metrics-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.metrics-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error {
+    color: red;
+}

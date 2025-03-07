@@ -1,0 +1,22 @@
+/* src/components/UserService.css */
+.user-service {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
