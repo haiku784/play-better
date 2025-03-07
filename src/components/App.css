@@ -1,0 +1,22 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+}
+
+.user-list, .session-list, .notification-list, .recommendation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list li, .session-list li, .notification-list li, .recommendation-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}

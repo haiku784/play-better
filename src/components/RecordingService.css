@@ -1,0 +1,41 @@
+.recording-service {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.recording-service h2 {
+    color: #333;
+}
+
+.recording-service input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.recording-service button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recording-service button:hover {
+    background-color: #0056b3;
+}
+
+.recording-service ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recording-service li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
