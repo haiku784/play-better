@@ -1,0 +1,34 @@
+/* SharingService.css */
+.sharing-service {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sharing-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sharing-form input,
+.sharing-form select {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sharing-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sharing-form button:hover {
+    background-color: #0056b3;
+}

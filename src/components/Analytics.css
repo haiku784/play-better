@@ -1,0 +1,29 @@
+/**
+ * Analytics CSS Styles
+ * Styles for the Analytics component.
+ */
+.analytics-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.analytics-table th, .analytics-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.analytics-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.analytics-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
